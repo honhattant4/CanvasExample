@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_RGB"
+        android:orderInCategory="100"
+        android:title="@string/action_RGB"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_ARGB"
+        android:orderInCategory="100"
+        android:title="@string/action_ARGB"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_COLOR"
+        android:orderInCategory="100"
+        android:title="@string/action_COLOR"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_PAINT"
+        android:orderInCategory="100"
+        android:title="@string/action_PAINT"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_POINT"
+        android:orderInCategory="100"
+        android:title="@string/action_POINT"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_LINE"
+        android:orderInCategory="100"
+        android:title="@string/action_LINE"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_RECT"
+        android:orderInCategory="100"
+        android:title="@string/action_RECT"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_OVAL"
+        android:orderInCategory="100"
+        android:title="@string/action_OVAL"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_CIRCLE"
+        android:orderInCategory="100"
+        android:title="@string/action_CIRCLE"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_ARC"
+        android:orderInCategory="100"
+        android:title="@string/action_ARC"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_ROUND_RECT"
+        android:orderInCategory="100"
+        android:title="@string/action_ROUND_RECT"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_PATH"
+        android:orderInCategory="100"
+        android:title="@string/action_PATH"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_BITMAP"
+        android:orderInCategory="100"
+        android:title="@string/action_BITMAP"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_BITMAP_MESH"
+        android:orderInCategory="100"
+        android:title="@string/action_BITMAP_MESH"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_VERTICES"
+        android:orderInCategory="100"
+        android:title="@string/action_VERTICES"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_TEXT_RUN"
+        android:orderInCategory="100"
+        android:title="@string/action_TEXT_RUN"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_POST_TEST"
+        android:orderInCategory="100"
+        android:title="@string/action_POST_TEST"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_TEXT_ON_PATH"
+        android:orderInCategory="100"
+        android:title="@string/action_TEXT_ON_PATH"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_PICTURE"
+        android:orderInCategory="100"
+        android:title="@string/action_PICTURE"
+        app:showAsAction="never" />
+
+
+</menu>

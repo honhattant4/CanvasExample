@@ -71,15 +71,15 @@
         android:orderInCategory="100"
         android:title="@string/action_BITMAP_MESH"
         app:showAsAction="never" />
+    <!--<item-->
+        <!--android:id="@+id/action_VERTICES"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="@string/action_VERTICES"-->
+        <!--app:showAsAction="never" />-->
     <item
-        android:id="@+id/action_VERTICES"
+        android:id="@+id/action_TEXT"
         android:orderInCategory="100"
-        android:title="@string/action_VERTICES"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/action_TEXT_RUN"
-        android:orderInCategory="100"
-        android:title="@string/action_TEXT_RUN"
+        android:title="@string/action_TEXT"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_POST_TEST"
@@ -96,6 +96,41 @@
         android:id="@+id/action_PICTURE"
         android:orderInCategory="100"
         android:title="@string/action_PICTURE"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_TRANSLATE"
+        android:orderInCategory="100"
+        android:title="@string/action_TRANSLATE"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_SCALE"
+        android:orderInCategory="100"
+        android:title="@string/action_SCALE"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_ROTATE"
+        android:orderInCategory="100"
+        android:title="@string/action_ROTATE"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_SKEW"
+        android:orderInCategory="100"
+        android:title="@string/action_SKEW"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_SAVE_RESTORE"
+        android:orderInCategory="100"
+        android:title="@string/action_SAVE_RESTORE"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_SAVELAYER"
+        android:orderInCategory="100"
+        android:title="@string/action_SAVELAYER"
         app:showAsAction="never" />
 
 

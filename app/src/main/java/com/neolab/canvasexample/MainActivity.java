@@ -1,21 +1,28 @@
 package com.neolab.canvasexample;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import com.neolab.canvasexample.views.CanvasView;
 
 public class MainActivity extends AppCompatActivity {
     CanvasView mCanvasView;
+    TextView mTvTitle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mTvTitle = (TextView) findViewById(R.id.tvTitle);
         mCanvasView = (CanvasView) findViewById(R.id.canvasView);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+//        Thread thread = new Thread(new Task());
+//        thread.start();
     }
 
     @Override
@@ -32,10 +39,6 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_VERTICES) {
-            return true;
-        }
         switch (id) {
             case R.id.action_RGB:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.RGB);
@@ -77,13 +80,13 @@ public class MainActivity extends AppCompatActivity {
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.BITMAP);
                 break;
             case R.id.action_BITMAP_MESH:
-                mCanvasView.changeTypeDraw(CanvasView.TypeDraw.BITMAP_MESH);
+//                mCanvasView.changeTypeDraw(CanvasView.TypeDraw.BITMAP_MESH);
+                Intent intent = new Intent(MainActivity.this, BitmapMeshActivity.class);
+                startActivity(intent);
                 break;
-            case R.id.action_VERTICES:
-                mCanvasView.changeTypeDraw(CanvasView.TypeDraw.VERTICES);
-                break;
-            case R.id.action_TEXT_RUN:
-                mCanvasView.changeTypeDraw(CanvasView.TypeDraw.TEXT_RUN);
+
+            case R.id.action_TEXT:
+                mCanvasView.changeTypeDraw(CanvasView.TypeDraw.TEXT);
                 break;
             case R.id.action_POST_TEST:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.POST_TEST);
@@ -94,9 +97,36 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_PICTURE:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.PICTURE);
                 break;
+            case R.id.action_TRANSLATE:
+                mCanvasView.changeTypeDraw(CanvasView.TypeDraw.TRANSLATE);
+                break;
+            case R.id.action_SCALE:
+                mCanvasView.changeTypeDraw(CanvasView.TypeDraw.SCALE);
+                break;
+            case R.id.action_ROTATE:
+                mCanvasView.changeTypeDraw(CanvasView.TypeDraw.ROTATE);
+                break;
+            case R.id.action_SKEW:
+                mCanvasView.changeTypeDraw(CanvasView.TypeDraw.SKEW);
+                break;
+            case R.id.action_SAVE_RESTORE:
+                mCanvasView.changeTypeDraw(CanvasView.TypeDraw.SAVE_RESTORE);
+                break;
+            case R.id.action_SAVELAYER:
+                mCanvasView.changeTypeDraw(CanvasView.TypeDraw.SAVELAYER);
+                break;
             default:
                 break;
         }
+        mTvTitle.setText("Draw " + mCanvasView.getTypeDraw().toString());
         return super.onOptionsItemSelected(item);
+    }
+
+    class Task implements Runnable {
+
+        @Override
+        public void run() {
+            mCanvasView.changeTypeDraw(CanvasView.TypeDraw.ROTATE);
+        }
     }
 }

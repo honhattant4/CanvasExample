@@ -16,10 +16,16 @@
     <string name="action_BITMAP">BITMAP</string>
     <string name="action_BITMAP_MESH">BITMAP_MESH</string>
     <string name="action_VERTICES">VERTICES</string>
-    <string name="action_TEXT_RUN">TEXT_RUN</string>
+    <string name="action_TEXT">TEXT</string>
     <string name="action_POST_TEST">POST_TEST</string>
     <string name="action_TEXT_ON_PATH">TEXT_ON_PATH</string>
     <string name="action_PICTURE">PICTURE</string>
+    <string name="action_TRANSLATE">TRANSLATE</string>
+    <string name="action_SCALE">SCALE</string>
+    <string name="action_ROTATE">ROTATE</string>
+    <string name="action_SKEW">SKEW</string>
+    <string name="action_SAVE_RESTORE">SAVE_RESTORE</string>
+    <string name="action_SAVELAYER">SAVELAYER</string>
 
 
 </resources>

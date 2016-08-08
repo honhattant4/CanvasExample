@@ -388,16 +388,24 @@ public class CanvasView extends View {
     }
 
     private void saveLayer(Canvas canvas) {
-        Log.i(TAG, "SAVECOUNT1 =" + canvas.getSaveCount());
         canvas.drawColor(Color.BLUE);
-        RectF rectF1=new RectF(0, 0, 500, 500);
-        canvas.saveLayer(rectF1, null);
+        Log.i(TAG, "SAVECOUNT1 =" + canvas.getSaveCount());
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            canvas.saveLayer(0, 0, 500, 500, mPaint);
+        } else {
+//            RectF rectF1 = new RectF(0, 0, 500, 500);
+//          canvas.saveLayer(rectF1, mPaint);
+        }
 
         Log.i(TAG, "SAVECOUNT2 =" + canvas.getSaveCount());
         canvas.drawColor(Color.GRAY);
         //   canvas.saveLayer(100,100,200,200,mPaint);
-        RectF rectF2=new RectF(0, 0, 500, 500);
-        canvas.saveLayer(rectF2, null);
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            canvas.saveLayer(0, 0, 400, 400, mPaint);
+        } else {
+//            RectF rectF2 = new RectF(0, 0, 400, 400);
+//            canvas.saveLayer(rectF2, mPaint);
+        }
         canvas.drawColor(Color.RED);
         Log.i(TAG, "SAVECOUNT3 =" + canvas.getSaveCount());
 

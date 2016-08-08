@@ -40,79 +40,79 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         switch (id) {
-            case R.id.action_RGB:
+            case R.id.action_rgb:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.RGB);
                 break;
-            case R.id.action_ARGB:
+            case R.id.action_argb:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.ARGB);
                 break;
-            case R.id.action_COLOR:
+            case R.id.action_color:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.COLOR);
                 break;
-            case R.id.action_PAINT:
+            case R.id.action_paint:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.PAINT);
                 break;
-            case R.id.action_POINT:
+            case R.id.action_point:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.POINT);
                 break;
-            case R.id.action_LINE:
+            case R.id.action_line:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.LINE);
                 break;
-            case R.id.action_RECT:
+            case R.id.action_rect:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.RECT);
                 break;
-            case R.id.action_OVAL:
+            case R.id.action_oval:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.OVAL);
                 break;
-            case R.id.action_CIRCLE:
+            case R.id.action_circle:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.CIRCLE);
                 break;
-            case R.id.action_ARC:
+            case R.id.action_arc:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.ARC);
                 break;
-            case R.id.action_ROUND_RECT:
+            case R.id.action_round_rect:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.ROUND_RECT);
                 break;
-            case R.id.action_PATH:
+            case R.id.action_path:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.PATH);
                 break;
-            case R.id.action_BITMAP:
+            case R.id.action_bitmap:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.BITMAP);
                 break;
-            case R.id.action_BITMAP_MESH:
+            case R.id.action_bitmap_mesh:
 //                mCanvasView.changeTypeDraw(CanvasView.TypeDraw.BITMAP_MESH);
                 Intent intent = new Intent(MainActivity.this, BitmapMeshActivity.class);
                 startActivity(intent);
                 break;
 
-            case R.id.action_TEXT:
+            case R.id.action_text:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.TEXT);
                 break;
-            case R.id.action_POST_TEST:
+            case R.id.action_post_text:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.POST_TEST);
                 break;
-            case R.id.action_TEXT_ON_PATH:
+            case R.id.action_text_on_path:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.TEXT_ON_PATH);
                 break;
-            case R.id.action_PICTURE:
+            case R.id.action_picture:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.PICTURE);
                 break;
-            case R.id.action_TRANSLATE:
+            case R.id.action_translate:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.TRANSLATE);
                 break;
-            case R.id.action_SCALE:
+            case R.id.action_scale:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.SCALE);
                 break;
-            case R.id.action_ROTATE:
+            case R.id.action_rotate:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.ROTATE);
                 break;
-            case R.id.action_SKEW:
+            case R.id.action_skew:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.SKEW);
                 break;
-            case R.id.action_SAVE_RESTORE:
+            case R.id.action_save_restore:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.SAVE_RESTORE);
                 break;
-            case R.id.action_SAVELAYER:
+            case R.id.action_savelayer:
                 mCanvasView.changeTypeDraw(CanvasView.TypeDraw.SAVELAYER);
                 break;
             default:

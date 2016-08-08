@@ -2,74 +2,74 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_RGB"
+        android:id="@+id/action_rgb"
         android:orderInCategory="100"
-        android:title="@string/action_RGB"
+        android:title="@string/action_rgb"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_ARGB"
+        android:id="@+id/action_argb"
         android:orderInCategory="100"
-        android:title="@string/action_ARGB"
+        android:title="@string/action_argb"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_COLOR"
+        android:id="@+id/action_color"
         android:orderInCategory="100"
-        android:title="@string/action_COLOR"
+        android:title="@string/action_color"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_PAINT"
+        android:id="@+id/action_paint"
         android:orderInCategory="100"
-        android:title="@string/action_PAINT"
+        android:title="@string/action_paint"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_POINT"
+        android:id="@+id/action_point"
         android:orderInCategory="100"
-        android:title="@string/action_POINT"
+        android:title="@string/action_point"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_LINE"
+        android:id="@+id/action_line"
         android:orderInCategory="100"
-        android:title="@string/action_LINE"
+        android:title="@string/action_line"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_RECT"
+        android:id="@+id/action_rect"
         android:orderInCategory="100"
-        android:title="@string/action_RECT"
+        android:title="@string/action_rect"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_OVAL"
+        android:id="@+id/action_oval"
         android:orderInCategory="100"
-        android:title="@string/action_OVAL"
+        android:title="@string/action_oval"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_CIRCLE"
+        android:id="@+id/action_circle"
         android:orderInCategory="100"
-        android:title="@string/action_CIRCLE"
+        android:title="@string/action_circle"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_ARC"
+        android:id="@+id/action_arc"
         android:orderInCategory="100"
-        android:title="@string/action_ARC"
+        android:title="@string/action_arc"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_ROUND_RECT"
+        android:id="@+id/action_round_rect"
         android:orderInCategory="100"
-        android:title="@string/action_ROUND_RECT"
+        android:title="@string/action_round_rect"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_PATH"
+        android:id="@+id/action_path"
         android:orderInCategory="100"
-        android:title="@string/action_PATH"
+        android:title="@string/action_path"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_BITMAP"
+        android:id="@+id/action_bitmap"
         android:orderInCategory="100"
-        android:title="@string/action_BITMAP"
+        android:title="@string/action_bitmap"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_BITMAP_MESH"
+        android:id="@+id/action_bitmap_mesh"
         android:orderInCategory="100"
-        android:title="@string/action_BITMAP_MESH"
+        android:title="@string/action_bitmap_mesh"
         app:showAsAction="never" />
     <!--<item-->
         <!--android:id="@+id/action_VERTICES"-->
@@ -77,60 +77,60 @@
         <!--android:title="@string/action_VERTICES"-->
         <!--app:showAsAction="never" />-->
     <item
-        android:id="@+id/action_TEXT"
+        android:id="@+id/action_text"
         android:orderInCategory="100"
-        android:title="@string/action_TEXT"
+        android:title="@string/action_text"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_POST_TEST"
+        android:id="@+id/action_post_text"
         android:orderInCategory="100"
-        android:title="@string/action_POST_TEST"
+        android:title="@string/action_post_text"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_TEXT_ON_PATH"
+        android:id="@+id/action_text_on_path"
         android:orderInCategory="100"
-        android:title="@string/action_TEXT_ON_PATH"
-        app:showAsAction="never" />
-
-    <item
-        android:id="@+id/action_PICTURE"
-        android:orderInCategory="100"
-        android:title="@string/action_PICTURE"
+        android:title="@string/action_text_on_path"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_TRANSLATE"
+        android:id="@+id/action_picture"
         android:orderInCategory="100"
-        android:title="@string/action_TRANSLATE"
+        android:title="@string/action_picture"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_SCALE"
+        android:id="@+id/action_translate"
         android:orderInCategory="100"
-        android:title="@string/action_SCALE"
+        android:title="@string/action_translate"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_ROTATE"
+        android:id="@+id/action_scale"
         android:orderInCategory="100"
-        android:title="@string/action_ROTATE"
+        android:title="@string/action_scale"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_SKEW"
+        android:id="@+id/action_rotate"
         android:orderInCategory="100"
-        android:title="@string/action_SKEW"
+        android:title="@string/action_rotate"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_SAVE_RESTORE"
+        android:id="@+id/action_skew"
         android:orderInCategory="100"
-        android:title="@string/action_SAVE_RESTORE"
+        android:title="@string/action_skew"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_save_restore"
+        android:orderInCategory="100"
+        android:title="@string/action_save_restore"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_SAVELAYER"
+        android:id="@+id/action_savelayer"
         android:orderInCategory="100"
-        android:title="@string/action_SAVELAYER"
+        android:title="@string/action_save_layer"
         app:showAsAction="never" />
 
 

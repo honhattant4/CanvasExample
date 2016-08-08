@@ -1,31 +1,31 @@
 <resources>
     <string name="app_name">CanvasExample</string>
 
-    <string name="action_RGB">RGB</string>
-    <string name="action_ARGB">ARGB</string>
-    <string name="action_COLOR">COLOR</string>
-    <string name="action_PAINT">PAINT</string>
-    <string name="action_POINT">POINT</string>
-    <string name="action_LINE">LINE</string>
-    <string name="action_RECT">RECT</string>
-    <string name="action_OVAL">OVAL</string>
-    <string name="action_CIRCLE">CIRCLE</string>
-    <string name="action_ARC">ARC</string>
-    <string name="action_ROUND_RECT">ROUND_RECT</string>
-    <string name="action_PATH">PATH</string>
-    <string name="action_BITMAP">BITMAP</string>
-    <string name="action_BITMAP_MESH">BITMAP_MESH</string>
-    <string name="action_VERTICES">VERTICES</string>
-    <string name="action_TEXT">TEXT</string>
-    <string name="action_POST_TEST">POST_TEST</string>
-    <string name="action_TEXT_ON_PATH">TEXT_ON_PATH</string>
-    <string name="action_PICTURE">PICTURE</string>
-    <string name="action_TRANSLATE">TRANSLATE</string>
-    <string name="action_SCALE">SCALE</string>
-    <string name="action_ROTATE">ROTATE</string>
-    <string name="action_SKEW">SKEW</string>
-    <string name="action_SAVE_RESTORE">SAVE_RESTORE</string>
-    <string name="action_SAVELAYER">SAVELAYER</string>
+    <string name="action_rgb">RGB</string>
+    <string name="action_argb">ARGB</string>
+    <string name="action_color">COLOR</string>
+    <string name="action_paint">PAINT</string>
+    <string name="action_point">POINT</string>
+    <string name="action_line">LINE</string>
+    <string name="action_rect">RECT</string>
+    <string name="action_oval">OVAL</string>
+    <string name="action_circle">CIRCLE</string>
+    <string name="action_arc">ARC</string>
+    <string name="action_round_rect">ROUND_RECT</string>
+    <string name="action_path">PATH</string>
+    <string name="action_bitmap">BITMAP</string>
+    <string name="action_bitmap_mesh">BITMAP_MESH</string>
+    <string name="action_vertices">VERTICES</string>
+    <string name="action_text">TEXT</string>
+    <string name="action_post_text">POST_TEXT</string>
+    <string name="action_text_on_path">TEXT_ON_PATH</string>
+    <string name="action_picture">PICTURE</string>
+    <string name="action_translate">TRANSLATE</string>
+    <string name="action_scale">SCALE</string>
+    <string name="action_rotate">ROTATE</string>
+    <string name="action_skew">SKEW</string>
+    <string name="action_save_restore">SAVE_RESTORE</string>
+    <string name="action_save_layer">SAVE_LAYER</string>
 
 
 </resources>

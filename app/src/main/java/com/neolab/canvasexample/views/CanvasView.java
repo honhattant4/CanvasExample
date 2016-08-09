@@ -376,7 +376,7 @@ public class CanvasView extends View {
         //tương ứng  canvas.drawLine(150, 150, 300, 150, paint);
         canvas.drawLine(100, 100, 500, 100, paint);
 
-
+//
      //  canvas.restoreToCount(1);
 //        canvas.restoreToCount(2);
         canvas.restoreToCount(3);

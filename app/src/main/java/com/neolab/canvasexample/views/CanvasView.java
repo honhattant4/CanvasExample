@@ -369,7 +369,7 @@ public class CanvasView extends View {
         //tương ứng  canvas.drawLine(200, 200, 600, 200, paint);
         canvas.save();
         Log.i(TAG, "SAVECOUNT4 =" + canvas.getSaveCount());
-
+//
         ///// scale
         canvas.scale(0.5f, 0.5f);
         paint.setColor(Color.BLUE);

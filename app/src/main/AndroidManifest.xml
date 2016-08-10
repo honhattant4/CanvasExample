@@ -8,16 +8,21 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".path.CropActivity">
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".BitmapMeshActivity" />
+        <activity android:name=".VerticesActivity" />
+        <!--Path-->
+        <activity android:name=".path.CropActivity"/>
+        <activity android:name=".path.DisplayActivity" />
+        <!--Matrix-->
+        <activity android:name=".matrix.MatrixActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".path.DisplayActivity" />
-        <activity android:name=".BitmapMeshActivity" />
-        <activity android:name=".VerticesActivity" />
     </application>
 
 </manifest>

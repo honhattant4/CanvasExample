@@ -8,27 +8,22 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.neolab.canvasexample.R;
+
 /**
  * Copyright © 2016 AsianTech Inc.
  * Created by TanHN on 8/10/16.
  */
-public class PathActivity extends AppCompatActivity {
+public class MatrixActivity extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TouchImageView touchImageView=new TouchImageView(this);
+        touchImageView.setImageResource(R.drawable.bg_test);
+        setContentView(touchImageView);
 
     }
-    class PathView extends View{
 
-        public PathView(Context context) {
-            super(context);
-        }
-
-        @Override
-        protected void onDraw(Canvas canvas) {
-            super.onDraw(canvas);
-        }
-    }
 }

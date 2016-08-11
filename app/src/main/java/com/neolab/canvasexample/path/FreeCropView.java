@@ -1,6 +1,4 @@
 package com.neolab.canvasexample.path;
-import java.util.ArrayList;
-import java.util.List;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -15,8 +13,6 @@ import android.graphics.Paint;
 import android.graphics.Paint.Style;
 import android.graphics.Path;
 import android.graphics.Point;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffXfermode;
 import android.support.v7.app.AlertDialog;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -25,6 +21,9 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 
 import com.neolab.canvasexample.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Copyright © 2016 AsianTech Inc.
@@ -35,12 +34,13 @@ public class FreeCropView extends View implements OnTouchListener {
     public static List<Point> mPoints;
     final int DIST = 2;
     boolean mFlagPathDraw = true;
-    Point mFirstPoint = null;
+    private Point mFirstPoint = null;
     boolean mIsFirstPoint = false;
-    Point mLastPoint = null;
-    Bitmap mBitmap = BitmapFactory.decodeResource(getResources(),
+    private Point mLastPoint = null;
+    private Bitmap mBitmap = BitmapFactory.decodeResource(getResources(),
             R.drawable.bg_test);
-    Context mContext;
+    private Context mContext;
+    private static final String TAG=FreeCropView.class.getSimpleName();
 
     public FreeCropView(Context c) {
         super(c);
@@ -133,10 +133,10 @@ public class FreeCropView extends View implements OnTouchListener {
         }
 
         invalidate();
-        Log.e("Hi  ==>", "Size: " + point.x + " " + point.y);
+        Log.e(TAG, "Size: " + point.x + " " + point.y);
 
         if (event.getAction() == MotionEvent.ACTION_UP) {
-            Log.d("Action up*******~~~~~~~>>>>", "called");
+            Log.d(TAG, "called");
             mLastPoint = point;
             if (mFlagPathDraw) {
                 if (mPoints.size() > 12) {
@@ -172,7 +172,7 @@ public class FreeCropView extends View implements OnTouchListener {
 
     }
 
-    public void fillinPartofPath() {
+    public void fillInPartOfPath() {
         Point point = new Point();
         point.x = mPoints.get(0).x;
         point.y = mPoints.get(0).y;

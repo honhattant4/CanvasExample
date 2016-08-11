@@ -35,12 +35,9 @@ public class FreeCropView extends View implements OnTouchListener {
     public static List<Point> mPoints;
     final int DIST = 2;
     boolean mFlagPathDraw = true;
-
     Point mFirstPoint = null;
     boolean mIsFirstPoint = false;
-
     Point mLastPoint = null;
-
     Bitmap mBitmap = BitmapFactory.decodeResource(getResources(),
             R.drawable.bg_test);
     Context mContext;

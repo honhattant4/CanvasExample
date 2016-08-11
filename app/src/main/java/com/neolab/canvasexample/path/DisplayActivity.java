@@ -31,26 +31,17 @@ public class DisplayActivity extends AppCompatActivity {
         if (extras != null) {
             mIsCrop = extras.getBoolean("crop");
         }
-        int widthOfscreen = 0;
-        int heightOfScreen = 0;
 
-        DisplayMetrics dm = new DisplayMetrics();
-        try {
-            getWindowManager().getDefaultDisplay().getMetrics(dm);
-        } catch (Exception ex) {
-        }
-        widthOfscreen = dm.widthPixels;
-        heightOfScreen = dm.heightPixels;
 
         mCompositeImageView = (ImageView) findViewById(R.id.our_imageview);
 
-        Bitmap bitmap2 = BitmapFactory.decodeResource(getResources(),
+        Bitmap bitmapIn = BitmapFactory.decodeResource(getResources(),
                 R.drawable.bg_test);
 
-        Bitmap resultingImage = Bitmap.createBitmap(widthOfscreen,
-                heightOfScreen, bitmap2.getConfig());
+        Bitmap bitmapCropped = Bitmap.createBitmap(bitmapIn.getWidth(),
+                bitmapIn.getHeight(), bitmapIn.getConfig());
 
-        Canvas canvas = new Canvas(resultingImage);
+        Canvas canvas = new Canvas(bitmapCropped);
         Paint paint = new Paint();
         paint.setAntiAlias(true);
 
@@ -65,8 +56,8 @@ public class DisplayActivity extends AppCompatActivity {
         } else {
             paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_OUT));
         }
-        canvas.drawBitmap(bitmap2, 0, 0, paint);
-        mCompositeImageView.setImageBitmap(resultingImage);
+        canvas.drawBitmap(bitmapIn, 0, 0, paint);
+        mCompositeImageView.setImageBitmap(bitmapCropped);
     }
 }
 

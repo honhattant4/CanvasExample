@@ -15,6 +15,8 @@ import android.graphics.Paint;
 import android.graphics.Paint.Style;
 import android.graphics.Path;
 import android.graphics.Point;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffXfermode;
 import android.support.v7.app.AlertDialog;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -221,9 +223,10 @@ public class FreeCropView extends View implements OnTouchListener {
         };
 
         AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
-        builder.setMessage("Do you Want to save Crop or Non-mIsCrop image?")
+        builder.setMessage("Do you Want to save Crop or Non-Crop image?")
                 .setPositiveButton("Crop", dialogClickListener)
-                .setNegativeButton("Non-mIsCrop", dialogClickListener).show()
+                .setNegativeButton("Non-Crop", dialogClickListener).show()
                 .setCancelable(false);
     }
+
 }
